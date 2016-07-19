@@ -10,7 +10,7 @@
   angular.module('BlurAdmin.theme')
     .constant('layoutSizes', {
       resWidthCollapseSidebar: 1200,
-      resWidthHideSidebar: 500
+      resWidthHideSidebar: 1200
     })
     .constant('layoutPaths', {
       images: {
