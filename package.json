@@ -1,6 +1,7 @@
 {
   "name": "Power-Analyst-Suite",
   "version": "0.0.1",
+  "main"    : "main.js",
   "devDependencies": {
     "browser-sync": "~2.9.11",
     "browser-sync-spa": "~1.0.3",
