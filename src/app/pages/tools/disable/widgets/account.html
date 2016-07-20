@@ -2,13 +2,13 @@
   <div class="input-demo radio-demo row">
     <div class="col-xs-6">
       <label class="radio-inline custom-radio nowrap">
-        <input type="radio" name="opt_Account" id="opt_AccountDefault" value="renamed_admin" checked>
+        <input type="radio" name="opt_Account" ng-model="current.opt_Account" id="opt_AccountDefault" value="renamed_admin">
         <span>Default Account</span>
       </label>
     </div>
     <div class="col-xs-6">
       <label class="radio-inline custom-radio nowrap">
-        <input type="radio" name="opt_Account" id="opt_AccountOther" value="other">
+        <input type="radio" name="opt_Account" ng-model="current.opt_Account" id="opt_AccountOther" value="other">
         <span>Other Account</span>
       </label>
     </div>
@@ -16,14 +16,21 @@
 </div>
 
 <div class="form-group">
-  <input type="text" class="form-control" id="txt_Account" placeholder="Account Name...">
+  <div ng-switch="current.opt_Account">
+    <div ng-switch-when="renamed_admin">
+      <input type="text" class="form-control" id="txt_Account" value="{{current.opt_Account}}" readonly="yes">
+    </div>
+    <div ng-switch-when="other">
+      <input type="text" class="form-control" id="txt_Account" placeholder="Account Name...">
+    </div>
+  </div>
 </div>
 
 <div class="checkbox-demo-row">
   <div class="input-demo checkbox-demo row">
     <div class="col-md-12">
       <label class="checkbox-inline custom-checkbox nowrap">
-        <input type="checkbox" id="chk_Account" value="yes" checked>
+        <input type="checkbox" id="chk_Account" ng-model="current.chk_Account">
         <span>Batch Mode</span>
       </label>
     </div>
@@ -31,6 +38,8 @@
 </div>
 
 
+<div ng-switch="current.chk_Account">
+  <div ng-switch-when="true">
 <div class="input-group">
   <span class="input-group-btn">
       <button id="btn_BatchBrowse" class="btn btn-primary btn-with-icon" type="button"><i class="ion-folder"></i>Browse</button>
@@ -44,8 +53,9 @@
       </button>
   </span>
 </div>
-
-<div class="input-group" style="display:none;">
+</div>
+  <div ng-switch-when="false">
+<div class="input-group">
   <input type="text" class="form-control with-danger-addon" placeholder="Hostname...">
   <span class="input-group-btn">
     <button id="btn_SingleRun" class="btn btn-primary btn-with-icon" type="button">
@@ -54,4 +64,6 @@
       <span><i class="ion-play"></i></span>
     </button>
   </span>
+</div>
+</div>
 </div>

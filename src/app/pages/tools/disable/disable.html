@@ -1,14 +1,16 @@
-<form>
-  <div class="widgets">
-    <div class="row">
-      <div class="col-md-12">
-        <div ba-panel ba-panel-title="Account Info" ba-panel-class="with-scroll">
-          <div ng-include="'app/pages/tools/disable/widgets/account.html'"></div>
-        </div>
-        <div ba-panel ba-panel-title="Console" ba-panel-class="with-scroll">
-          <div ng-include="'app/pages/tools/disable/widgets/console.html'"></div>
+<div ng-controller="DisableCtrl">
+  <form>
+    <div class="widgets">
+      <div class="row">
+        <div class="col-md-12">
+          <div ba-panel ba-panel-title="Account Info" ba-panel-class="with-scroll">
+            <div ng-include="'app/pages/tools/disable/widgets/account.html'"></div>
+          </div>
+          <div ba-panel ba-panel-title="Console" ba-panel-class="with-scroll">
+            <div ng-include="'app/pages/tools/disable/widgets/console.html'"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</form>
+  </form>
+</div>

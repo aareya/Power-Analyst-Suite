@@ -9,7 +9,11 @@
       .controller('DisableCtrl', DisableCtrl);
 
   /** @ngInject */
-  function DisableCtrl() {
-
+  function DisableCtrl($scope) {
+    $scope.default = {opt_Account: "renamed_admin", chk_Account: true};
+    $scope.reset = function () {
+      $scope.current = angular.copy($scope.default);
+    };
+    $scope.reset();
   }
 })();

@@ -46,6 +46,7 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "start": "gulp && electron ."
+    "start": "gulp && electron .",
+    "test": "gulp serve"
   }
 }
