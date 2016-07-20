@@ -14,8 +14,8 @@
       .state('tools.disable', {
         url: '/disable',
         templateUrl: 'app/pages/tools/disable/disable.html',
-          title: 'Disable Accounts',
-          sidebarMeta: {
+        title: 'Disable Accounts',
+        sidebarMeta: {
             icon: 'ion-ios-pulse',
             order: 100,
           },
