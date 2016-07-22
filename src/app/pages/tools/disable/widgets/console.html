@@ -1,12 +1,21 @@
 <div class="input-group">
   <div id="sec_Console" class="console">
-    Console output will appear here...
+    {{current.txt_Console}}
   </div>
 </div>
 
-<div class="btn-group-example">
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <button class="btn btn-danger btn-with-icon" type="button" ng-click="reset()"><i class="ion-trash-a"></i>Clear form</button>
-    <button class="btn btn-primary btn-with-icon" type="button"><i class="ion-document-text"></i>Export console</button>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="btn-group-example">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button class="btn btn-danger btn-with-icon" type="button" ng-click="console_clear()"><i class="ion-backspace"></i>Clear console</button>
+        <button class="btn btn-primary btn-with-icon" type="button" ng-click="console_test()"><i class="ion-document-text"></i>Export console</button>
+      </div>
+    </div></div>
+    <div class="col-md-4" align="right">
+      <div>
+        <button type="button" class="btn btn-danger btn-with-icon" ng-click="reset()"><i class="ion-refresh"></i>Reset form</button>
+      </div>
+    </div>
   </div>
-</div>
