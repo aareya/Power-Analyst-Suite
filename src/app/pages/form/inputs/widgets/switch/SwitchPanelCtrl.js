@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.form')
+  angular.module('PowerAnalyst.pages.form')
       .controller('SwitchPanelCtrl', SwitchPanelCtrl);
 
   /** @ngInject */

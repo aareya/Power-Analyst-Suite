@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.theme')
+  angular.module('PowerAnalyst.theme')
       .filter('kameleonImg', kameleonImg);
 
   /** @ngInject */

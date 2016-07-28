@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.form')
+  angular.module('PowerAnalyst.pages.form')
       .controller('WizardCtrl', WizardCtrl);
 
   /** @ngInject */

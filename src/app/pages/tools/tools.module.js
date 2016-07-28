@@ -5,10 +5,10 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.tools', [
-    'BlurAdmin.pages.tools.disable',
-    //'BlurAdmin.pages.components.timeline',
-    //'BlurAdmin.pages.components.tree',
+  angular.module('PowerAnalyst.pages.tools', [
+    'PowerAnalyst.pages.tools.disable',
+    //'PowerAnalyst.pages.components.timeline',
+    //'PowerAnalyst.pages.components.tree',
   ])
       .config(routeConfig);
 

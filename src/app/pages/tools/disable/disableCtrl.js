@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.tools.disable')
+  angular.module('PowerAnalyst.pages.tools.disable')
       .controller('DisableCtrl', DisableCtrl);
 
   /** @ngInject */

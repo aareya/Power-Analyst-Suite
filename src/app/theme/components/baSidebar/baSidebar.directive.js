@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.theme.components')
+  angular.module('PowerAnalyst.theme.components')
       .directive('baSidebar', baSidebar);
 
   /** @ngInject */

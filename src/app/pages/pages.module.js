@@ -5,18 +5,18 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages', [
+  angular.module('PowerAnalyst.pages', [
     'ui.router',
 
-    'BlurAdmin.pages.dashboard',
-    'BlurAdmin.pages.tools',
-    'BlurAdmin.pages.ui',
-    'BlurAdmin.pages.components',
-    'BlurAdmin.pages.form',
-    'BlurAdmin.pages.tables',
-    'BlurAdmin.pages.charts',
-    'BlurAdmin.pages.maps',
-    'BlurAdmin.pages.profile',
+    'PowerAnalyst.pages.dashboard',
+    'PowerAnalyst.pages.tools',
+    'PowerAnalyst.pages.ui',
+    'PowerAnalyst.pages.components',
+    'PowerAnalyst.pages.form',
+    'PowerAnalyst.pages.tables',
+    'PowerAnalyst.pages.charts',
+    'PowerAnalyst.pages.maps',
+    'PowerAnalyst.pages.profile',
   ])
       .config(routeConfig);
 
