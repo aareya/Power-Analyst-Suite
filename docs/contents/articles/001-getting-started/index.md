@@ -8,7 +8,7 @@ template: article.jade
 
 ## What is PowerAnalyst?
 
-Blur admin is Angular front-end Admin Dashboard template. That means all data you can see on graphs, charts tables is hardcoded in Javascript. You can use any backend you want with it without limitations.
+Power Analyst is Angular front-end Admin Dashboard template. That means all data you can see on graphs, charts tables is hardcoded in Javascript. You can use any backend you want with it without limitations.
 
 ## How can it help me?
 
